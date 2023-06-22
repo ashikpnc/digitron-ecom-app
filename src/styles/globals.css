@@ -1,0 +1,61 @@
+:root {
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --button-border-radius: 10px;
+  --primary-color: rgb(46, 44, 44);
+  --secondary-color: rgb(165, 154, 154);
+  --button-bg: white;
+  --button-fg: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: rgb(165, 154, 154);
+    --secondary-color:rgb(46, 44, 44);
+    --button-bg: white;
+    --button-fg: black;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: var(--font-mono)
+}
+
+.app-container {
+  max-width: 1440px; /* Adjust the value as per your design */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Optional: Add padding around the content */
+}
+
+/* Reset default styles for buttons */
+button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+}
+
+/* Reset default styles for links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
