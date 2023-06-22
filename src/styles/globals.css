@@ -32,7 +32,7 @@ body {
 .app-container {
   max-width: 1440px; /* Adjust the value as per your design */
   margin: 0 auto; /* Center the container horizontally */
-  padding: 20px; /* Optional: Add padding around the content */
+  /* padding: 20px; */
 }
 
 /* Reset default styles for buttons */
